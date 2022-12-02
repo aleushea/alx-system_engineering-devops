@@ -1,2 +1,2 @@
-#!/bin/baish
+#!/bin/bash
 whoami
