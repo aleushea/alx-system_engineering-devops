@@ -1,0 +1,2 @@
+mod --reference=olleh hell#!/bin/bash
+chmod --reference=olleh hell
