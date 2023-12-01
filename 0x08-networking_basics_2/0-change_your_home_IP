@@ -1,0 +1,5 @@
+#!/user/bin/env bash
+cp /etc/hosts Alex
+sed -i s/^127.*/"127.0.0.2 localhost"/ new_hosts
+echo "8.8.8.8 facebook.com" >> Alex
+cp Alex /etc/hosts
