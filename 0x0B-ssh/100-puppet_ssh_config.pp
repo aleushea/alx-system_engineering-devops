@@ -3,9 +3,13 @@
 
 file { 'etc/ssh/ssh_config':
 	ensure  => present,
+
 content =>"
+
+	#client configuration  manuscript
 	host*
 	IdentityFile ~/.ssh/school
 	PasswordAuthentication no
 	",
+
 }
