@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
-# fix nginx configuration and start on port 80
+# This Bash script modifies Nginx configuration and restarts the Nginx service.
+
+# sed(stream editor) modifies the Nginx configuration file
 sudo sed -i "s/ipv6only=on//" /etc/nginx/sites-available/default
+
+# This line removes any existing symbolic link to the default Nginx configuration in the sites-enabled directory.
 sudo rm -f /etc/nginx/sites-enabled/default
+
+# This line of code  create a new symbolic link, linking the default configuration from sites-available to sites-enabled.
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+# This line of cod restarts Nginx service to apply the changes.
 sudo service nginx restart

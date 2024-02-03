@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Command to make an nginx server listen on port 80, shorter version
+
+#This command uses stream editor to modify the Nginx configuration file It changes the port from 8080 to 80
+
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+# This line sends a SIGHUP signal to the Nginx process, effectively causing it to reload its configuration. This ensures that the changes take effect without restarting the entire Nginx service.
+pkill -1 nginx
