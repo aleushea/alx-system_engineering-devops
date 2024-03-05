@@ -40,5 +40,5 @@ A great API to use for some practice is the Reddit API. There’s a lot of endpo
 | 0-main.py              | Script to test the 0-sub.py function    |
 | 1-top_ten.py           | Function that prints top 10 hot gist of a subreddit   |
 | 1-main.py              | Script to test the 1-main.py function    |
-| 2-recurse.py           | Function that recursively return a list of available hot 10 gist of a subreddit |
+| 2-recurse.py           | Function that recursively return a list of hot 10 gist of a subreddit |
 | 2-main.py              | Script to test the 2-recurse.py function |
