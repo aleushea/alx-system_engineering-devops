@@ -4,7 +4,6 @@ subscribers of a subreddit passed to it"""
 
 import requests
 
-
 def number_of_subscribers(subreddit):
     """Function that returns the numbers of
     subscribers of a subreddit passed to it"""
